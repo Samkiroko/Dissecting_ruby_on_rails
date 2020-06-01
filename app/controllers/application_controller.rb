@@ -1,3 +1,6 @@
 class ApplicationController < ActionController::Base
-include DeviseWhitelist
+  protect_from_forgery with: :exception
+  include DeviseWhitelist
+  include SetSource
+  include CurrentUserConcern
 end
