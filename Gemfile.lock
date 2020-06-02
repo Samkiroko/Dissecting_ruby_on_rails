@@ -1,12 +1,7 @@
-GIT
-  remote: git@github.com:Samkiroko/my_ruby_gem.git
-  revision: 7edb9ab63541c5e26eae995964f958cae0c22b36
-  specs:
-    Samkiroko_view_tool (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
+    Samkiroko_view_tool (0.1.0)
     actioncable (5.2.4.3)
       actionpack (= 5.2.4.3)
       nio4r (~> 2.0)
@@ -247,7 +242,7 @@ PLATFORMS
   x86-mswin32
 
 DEPENDENCIES
-  Samkiroko_view_tool!
+  Samkiroko_view_tool (~> 0.1.0)
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.5.0)
   byebug
