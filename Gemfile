@@ -56,4 +56,5 @@ gem 'friendly_id', '~> 5.3'
 gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'bootstrap', '~> 4.5.0'
 gem 'jquery-rails'
+gem 'Samkiroko_view_tool' , git:'git@github.com:Samkiroko/my_ruby_gem.git'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
