@@ -1,17 +1,7 @@
-<p id="notice"><%= notice %></p>
-<h1>Blogs</h1>
-<table>
-  <thead>
-    <tr>
-      <th>Blog Title</th>
-      <th>Date</th>
-      <th>Body</th>
-      <th colspan="4"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <%= render @blogs %>
-  </tbody>
-</table>
-<br>
-<%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
+<div class="col-sm-8 blog-main">
+  <%= render @blogs %>
+  <nav class="blog-pagination">
+    <a class="btn btn-outline-primary" href="#">Older</a>
+    <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+  </nav>
+</div>
