@@ -14,4 +14,4 @@
   </tbody>
 </table>
 <br>
-<%= link_to 'New Blog', new_blog_path %>
+<%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
