@@ -60,4 +60,5 @@ gem 'Samkiroko_view_tool', '~> 0.1.0'
 gem 'petergate', '~> 2.0', '>= 2.0.1'
 gem 'font-awesome-sass', '~> 5.9.0'
 gem 'kaminari', '~> 1.2', '>= 1.2.1'
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
