@@ -63,5 +63,16 @@ footer p {
 /* Custom styles */
 
 .portfolio-container {
-  padding: 20px;
+  padding: 30px;
+}
+
+.portfolio-box {
+  border: 2px solid transparent;
+  -webkit-transition: border 500ms ease-out;
+  -moz-transition: border 500ms ease-out;
+  -o-transition: border 500ms ease-out;
+}
+
+.portfolio-box:hover {
+  border: 2px solid #d3d3d3;
 }
