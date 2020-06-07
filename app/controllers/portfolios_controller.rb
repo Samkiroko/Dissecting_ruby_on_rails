@@ -66,6 +66,8 @@ before_action :set_portfolio_item, only: [:edit, :update, :destroy, :show]
     params.require(:portfolio).permit(:title,
                                       :subtitle,
                                       :body,
+                                      :main_image,
+                                      :thumb_image,
                                       technologies_attributes: [:name]
                                      )
    end

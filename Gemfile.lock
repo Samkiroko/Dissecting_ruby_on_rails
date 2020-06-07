@@ -301,6 +301,7 @@ PLATFORMS
 
 DEPENDENCIES
   Samkiroko_view_tool (~> 0.1.0)
+  aws-sdk-s3 (~> 1)
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.5.0)
   byebug

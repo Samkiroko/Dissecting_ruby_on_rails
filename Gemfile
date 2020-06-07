@@ -65,4 +65,5 @@ gem 'carrierwave', '~> 2.1'
 gem 'mini_magick', '~> 4.10', '>= 4.10.1'
 gem 'carrierwave-aws', '~> 1.5'
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'
+gem 'aws-sdk-s3', '~> 1'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
