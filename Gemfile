@@ -68,4 +68,6 @@ gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'
 gem 'aws-sdk-s3', '~> 1'
 gem 'cocoon', '~> 1.2', '>= 1.2.14'
 gem 'gritter', '~> 1.2'
+gem 'twitter', '~> 7.0'
+gem 'redis', '~> 4.1', '>= 4.1.4'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
