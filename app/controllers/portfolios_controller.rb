@@ -20,7 +20,6 @@ before_action :set_portfolio_item, only: [:edit, :update, :destroy, :show]
 
   def new
     @portfolio_items = Portfolio.new
-    3.times { @portfolio_items.technologies.build }
   end
 
   def create
