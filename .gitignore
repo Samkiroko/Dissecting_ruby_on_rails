@@ -9,7 +9,7 @@
 .history
 .env
 storage.yml
-
+config/storage.yml
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
