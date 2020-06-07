@@ -67,7 +67,7 @@ before_action :set_portfolio_item, only: [:edit, :update, :destroy, :show]
                                       :body,
                                       :main_image,
                                       :thumb_image,
-                                      technologies_attributes: [:name]
+                                      technologies_attributes: [:id, :name, :_destroy]
                                      )
    end
 

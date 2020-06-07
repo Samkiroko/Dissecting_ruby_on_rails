@@ -16,6 +16,7 @@
 //= require bootstrap-sprockets
 //= require html.sortable
 //= require cocoon
+//= require gritter
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks

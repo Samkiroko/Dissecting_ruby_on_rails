@@ -67,4 +67,5 @@ gem 'carrierwave-aws', '~> 1.5'
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'
 gem 'aws-sdk-s3', '~> 1'
 gem 'cocoon', '~> 1.2', '>= 1.2.14'
+gem 'gritter', '~> 1.2'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
