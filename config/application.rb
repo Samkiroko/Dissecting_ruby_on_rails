@@ -24,6 +24,7 @@ module DevcampPortfolio
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
     config.assets.paths << "#{Rails.root}/app/assets/videos"
+    config.assets.paths << Rails.root.join("app", "assets", "fonts")
     config.eager_load_paths << "#{Rails.root}/lib"
     config.generators.system_tests = nil
   end

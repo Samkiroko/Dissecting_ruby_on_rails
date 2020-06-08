@@ -72,4 +72,5 @@ gem 'twitter', '~> 7.0'
 gem 'redis', '~> 4.1', '>= 4.1.4'
 gem 'redcarpet', '~> 3.5'
 gem 'coderay', '~> 1.1', '>= 1.1.3'
+gem "font-awesome-rails"
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
