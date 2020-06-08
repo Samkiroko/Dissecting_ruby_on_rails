@@ -5,7 +5,7 @@
     <%= @blog.topic.title%>
   </p>
   <p>
-    <%= @blog.body %>
+    <%= markdown @blog.body %>
   </p>
   <%= render 'comments/comment_form' %>
   <div id="comments" data-blog-id="<%= @blog.id %>">
