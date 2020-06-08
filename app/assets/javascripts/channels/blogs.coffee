@@ -1,3 +1,4 @@
+  
 jQuery(document).on 'turbolinks:load', ->
   comments = $('#comments')
   if comments.length > 0
