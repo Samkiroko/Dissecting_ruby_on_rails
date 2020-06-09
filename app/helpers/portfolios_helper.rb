@@ -3,7 +3,7 @@ module PortfoliosHelper
     "http://placehold.it/#{height}x#{width}"
   end
 
-   def portfolio_img img, type
+  def portfolio_img(img, type)
     if !img.nil?
       img
     elsif type == 'thumb'
@@ -11,5 +11,5 @@ module PortfoliosHelper
     elsif type == 'main'
       image_generator(height: '600', width: '400')
     end
-   end
+  end
 end

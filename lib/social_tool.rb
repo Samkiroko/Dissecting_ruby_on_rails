@@ -1,5 +1,3 @@
 module SocialTool
-  def self
-    
-  end
+  def self; end
 end
