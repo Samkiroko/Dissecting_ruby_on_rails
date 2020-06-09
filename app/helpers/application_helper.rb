@@ -9,15 +9,15 @@ module ApplicationHelper
     end
   end
 
-  def source_helper(layout_name)
+  def source_helper(styles)
     if session[:source]
-      greeting = "Thanks for visiting me from #{session[:source]} and you are on the #{layout_name} layout"
-      content_tag(:p, greeting, class: "source-greeting")
+      greeting = "Thanks for visiting me from #{session[:source]}, please feel free to #{ link_to 'contact me', contact_path } if you'd like to work together."
+      content_tag(:div, greeting.html_safe, class: styles)
     end
   end
 
   def copyright_generator
-    SamkirokoViewTool::Renderer.copyright 'Samuel kiroko', 'All rights reserved'
+    SamkirokoViewTool::Renderer.copyright 'Samuel kiroko N', 'All rights reserved'
   end
 
   def nav_items
@@ -42,6 +42,10 @@ module ApplicationHelper
         url: portfolios_path,
         title: 'Portfolio'
       },
+      # {
+      #   url: tech_news_path,
+      #   title: 'Tech News'
+      # },
     ]
   end
 
@@ -62,14 +66,13 @@ module ApplicationHelper
   def alerts
     alert = (flash[:alert] || flash[:error] || flash[:notice])
 
-  if alert
+    if alert
       alert_generator alert
-  end
+    end
   end
 
   def alert_generator msg
-    js add_gritter(msg, title: "Samuel kiroko N Portfolio", sticky: false)
+    js add_gritter(msg, title: "Samuel Kiroko N Portfolio", sticky: false)
   end
 
 end
-
