@@ -2,7 +2,7 @@ ready = undefined
 set_positions = undefined
 
 set_positions = ->
-  $('.card').each (i) ->
+  $('.anchor').each (i) ->
     $(this).attr 'data-pos', i + 1
     return
   return
@@ -13,7 +13,7 @@ ready = ->
   $('.sortable').sortable().bind 'sortupdate', (e, ui) ->
     updated_order = []
     set_positions()
-    $('.card').each (i) ->
+    $('.anchor').each (i) ->
       updated_order.push
         id: $(this).data('id')
         position: i + 1
