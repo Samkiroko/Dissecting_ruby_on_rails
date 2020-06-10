@@ -1,0 +1,2 @@
+      invoke  active_record
+      create    db/migrate/20200610124418_add_featured_to_blogs.rb

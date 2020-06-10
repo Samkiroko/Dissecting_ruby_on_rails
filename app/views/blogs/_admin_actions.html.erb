@@ -1,5 +1,6 @@
 <% if logged_in?(:site_admin) %>
   <nav class="breadcrumb blogcrumb">
+    <%= link_to icon('fa', 'star'), toggle_featured_blog_path(blog), style: blog_featured_color(blog) %>
     <%= link_to icon('fa','file'), toggle_status_blog_path(blog), style: blog_status_color(blog) %>
     <%= link_to icon('fa','edit'), edit_blog_path(blog) %>
     <%= link_to icon('fa','trash'), blog, method: :delete, data: { confirm: 'Are you sure?' } %>

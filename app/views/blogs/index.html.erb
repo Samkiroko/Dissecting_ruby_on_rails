@@ -1,4 +1,24 @@
-<div class="col-sm-8 blog-main">
+<% if @blogs.featured.exists? %>
+  <div class="container">
+    <div class="jumbotron p-2 p-md-5 text-white rounded bg-dark featured_post">
+      <div class="col-md-10 px-0 break-text featured-post">
+        <% if logged_in?(:site_admin) %>
+          <%= link_to fa_icon('star 2x'), toggle_featured_blog_path(@featured_blog), style: blog_featured_color(@featured_blog) %>
+        <% end %>
+        <p class="lead mb-0"><%= link_to 'Read More...', blog_path(@featured_blog), class: "text-primary font-weight-bold" %></p>
+        <h1 class="display-4 font-italic"><%= @blogs.featured.first.title %></h1>
+        <p class="lead my-3"><%= markdown @blogs.featured.first.body.truncate(250) %></p>
+      </div>
+    </div>
+  </div>
+<% end %>
+<div class="col-md-8 blog-main break-text">
+  <p class="lead">
+    <%= link_to 'Write a New Blog', new_blog_path, class: "btn btn-dark mb-3" if logged_in?(:site_admin) %>
+  </p>
+  <p class="lead">
+    <%= link_to 'Topics', topics_path, class: "btn btn-info mb-3" %>
+  </p>
   <%= paginate @blogs %>
   <%= render @blogs %>
   <%= paginate @blogs %>

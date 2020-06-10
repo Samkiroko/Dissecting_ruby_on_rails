@@ -1,15 +1,15 @@
 module BlogsHelper
-  def gravatar_helper(user)
+  def gravatar_helper user
     image_tag "https://www.gravatar.com/avatar/#{Digest::MD5.hexdigest(user.email)}", width: 60
   end
 
   class CodeRayify < Redcarpet::Render::HTML
-    def block_code(code, language)
+    def block_code code, language
       CodeRay.scan(code, language).div
     end
   end
 
-  def markdown(text)
+  def markdown text
     coderayified = CodeRayify.new(filter_html: true, hard_wrap: true)
 
     options = {
@@ -23,7 +23,16 @@ module BlogsHelper
     markdown_to_html.render(text).html_safe
   end
 
-  def blog_status_color(blog)
-    'color: red;' if blog.draft?
+  def blog_status_color blog
+    if blog.draft?
+      'color: red;'
+    else
+      'color: green;'
+    end
+  end
+  def blog_featured_color blog
+    if blog.featured?
+      'color: yellow;'
+    end
   end
 end

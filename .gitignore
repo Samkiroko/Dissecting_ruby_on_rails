@@ -8,6 +8,7 @@
 /.bundle
 .history
 .env
+.ENV
 storage.yml
 config/storage.yml
 # Ignore all logfiles and tempfiles.

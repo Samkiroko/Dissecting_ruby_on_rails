@@ -1,0 +1,2 @@
+      invoke  active_record
+   identical    db/migrate/20200610130411_add_featured_to_blogs.rb
