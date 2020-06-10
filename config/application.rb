@@ -31,5 +31,6 @@ module DevcampPortfolio
     # Don't generate system test files.
     config.generators.system_tests = nil
     config.assets.initialize_on_precompile = false
+    config.assets.js_compressor = Uglifier.new(:harmony => true)
   end
 end
